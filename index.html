@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf8ff">
+  <meta name="description" content="Sema Nasi is a safe, anonymous space for student wellbeing and support in Kenya.">
+  <title>Sema Nasi — Safe Space for Students</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Sema Nasi home"><strong>Sema Nasi 🇰🇪</strong><span>Safe Space for Students</span></a>
+    <div class="header-actions">
+      <button class="icon-button" id="veil-toggle" aria-label="Turn on privacy veil" title="Privacy veil">◉̸</button>
+      <a class="quick-exit" href="https://www.google.com" aria-label="Quick exit to Google"><span aria-hidden="true">ϟ</span> QUICK EXIT</a>
+      <button class="profile-button" aria-label="Your private space">♟</button>
+    </div>
+  </header>
+
+  <main id="home" class="page-shell">
+    <section class="welcome-card" aria-labelledby="welcome-title">
+      <div class="welcome-badges"><span class="badge badge-gold">#SemaUsikike</span><span class="badge badge-mint"><i></i> Live Safe Board</span></div>
+      <h1 id="welcome-title">🇰🇪 Mental Health in Kenyan Schools</h1>
+      <p>An open collaborative space breaking silence in boarding schools &amp; campuses across Kenya.</p>
+      <div class="privacy-note"><span aria-hidden="true">♙</span> 100% Anonymous &amp; Unmonitored by Admins</div>
+    </section>
+
+    <nav class="pillar-tabs" aria-label="Explore pillars" role="tablist">
+      <button class="pillar-tab active" role="tab" aria-selected="true" aria-controls="pillar-1" id="tab-1" data-pillar="1"><span>💔</span> 1. Stigma Reality</button>
+      <button class="pillar-tab" role="tab" aria-selected="false" aria-controls="pillar-2" id="tab-2" data-pillar="2"><span>🌷</span> 2. Helplines</button>
+      <button class="pillar-tab" role="tab" aria-selected="false" aria-controls="pillar-3" id="tab-3" data-pillar="3"><span>🦋</span> 3. Wisdom</button>
+    </nav>
+
+    <section class="pillar-section" id="pillar-1" role="tabpanel" aria-labelledby="tab-1">
+      <div class="pillar-intro stigma-intro">
+        <div class="intro-meta"><span class="eyebrow">♡ PILLAR 01 • COMMUNITY INSIGHTS</span><span class="voice-count">142 Student Voices</span></div>
+        <h2>What does mental health stigma look like in Kenyan schools?</h2>
+        <p>Lifting the veil on toxic boarding pressures, exam shaming, and hidden staffroom gossip.</p>
+        <button class="suggest-button" data-modal="Pillar 1: What does stigma look like in your school?"><span class="plus">＋</span> Give out suggestion / observation <span class="anonymous-tag">Anonymous</span></button>
+      </div>
+      <div class="story-list" id="story-list" aria-live="polite"></div>
+    </section>
+
+    <section class="pillar-section hidden" id="pillar-2" role="tabpanel" aria-labelledby="tab-2" hidden>
+      <div class="pillar-intro help-intro">
+        <div class="intro-meta"><span class="eyebrow">✓ PILLAR 02 • VERIFIED HAVENS</span><span class="voice-count">Free support</span></div>
+        <h2>What resources are available for young people in Kenya?</h2>
+        <p>Confidential support options. If you feel unsafe or in immediate danger, reach out to a trusted adult or emergency services.</p>
+      </div>
+      <div class="story-list">
+        <article class="resource-card"><div class="resource-top"><span class="resource-icon">♡</span><div><h3>Childline Kenya</h3><p class="resource-subtitle">Free child helpline</p></div><span class="resource-label">Dial 116</span></div><p>Call Childline Kenya to talk about safety, bullying, or difficult feelings. Check availability with the service.</p><a class="call-button" href="tel:116">Call 116</a></article>
+        <article class="resource-card"><div class="resource-top"><span class="resource-icon warm">☏</span><div><h3>Befrienders Kenya</h3><p class="resource-subtitle">Emotional support</p></div></div><p>A listening service for people going through a hard time. Visit their official channels to confirm current contact details and hours.</p><a class="call-button secondary-call" href="https://befrienderskenya.org/" target="_blank" rel="noopener noreferrer">Visit Befrienders Kenya</a></article>
+      </div>
+    </section>
+
+    <section class="pillar-section hidden" id="pillar-3" role="tabpanel" aria-labelledby="tab-3" hidden>
+      <div class="pillar-intro wisdom-intro"><div class="intro-meta"><span class="eyebrow">✦ PILLAR 03 • SMALL WAYS FORWARD</span><span class="voice-count">A little at a time</span></div><h2>You deserve care, respect, and a listening ear.</h2><p>There is no single right way to feel. These gentle reminders can help you take the next small step.</p></div>
+      <div class="story-list">
+        <article class="wisdom-card"><span class="wisdom-mark">01</span><div><h3>Name what you are feeling</h3><p>You don’t need perfect words. “I feel overwhelmed” is a good place to start.</p></div></article>
+        <article class="wisdom-card"><span class="wisdom-mark">02</span><div><h3>Find one trusted person</h3><p>A friend, relative, teacher, or counselor can listen. You can ask them to stay with you while you talk.</p></div></article>
+        <article class="wisdom-card"><span class="wisdom-mark">03</span><div><h3>Take a small pause</h3><p>Try a slow breath, a glass of water, or stepping somewhere quieter. Small things count.</p></div></article>
+      </div>
+    </section>
+
+    <section class="mood-card" aria-labelledby="mood-title"><div class="mood-heading"><h2 id="mood-title">QUICK MOOD CHECK-IN</h2><span>Uko aje leo?</span></div><div class="mood-options" role="group" aria-label="Choose how you feel today">
+      <button class="mood-option" data-mood="Poa"><span>☀️</span><small>Poa</small></button><button class="mood-option" data-mood="Sawa"><span>🙂</span><small>Sawa</small></button><button class="mood-option" data-mood="Choka"><span>😮‍💨</span><small>Choka</small></button><button class="mood-option" data-mood="Chini"><span>🌧️</span><small>Chini</small></button><button class="mood-option" data-mood="Need Talk"><span>🆘</span><small>Need Talk</small></button>
+    </div><p class="mood-feedback" id="mood-feedback" aria-live="polite"></p></section>
+
+    <div class="bottom-actions"><button class="submit-note" data-modal="Share an anonymous note">✎ &nbsp; Submit Anonymous Note</button><button class="download-button" id="download-button" aria-label="Download a copy of the page">↓</button></div>
+    <p class="moderation-note">Moderated warmly by peer counselors. No real names or IP tracking stored.</p>
+  </main>
+
+  <nav class="bottom-nav" aria-label="Main navigation"><a class="nav-item current" href="#pillar-1"><span>▦</span>3 Pillars</a><a class="nav-item" href="#pillar-2" data-nav-pillar="2"><span>♧</span>Helplines</a><a class="nav-item" href="#note" data-modal="Start a private conversation"><span>▢</span>Starters</a><a class="nav-item" href="#pillar-3" data-nav-pillar="3"><span>▤</span>Guide</a></nav>
+
+  <dialog class="note-dialog" id="note-dialog" aria-labelledby="dialog-title"><form method="dialog" class="dialog-card"><button class="dialog-close" aria-label="Close dialog">×</button><span class="dialog-eyebrow">A PRIVATE, ANONYMOUS SPACE</span><h2 id="dialog-title">Share what’s on your mind</h2><p>Your note is for the community. Please leave out names, phone numbers, or details that could identify you or someone else.</p><label for="note-text">Your note</label><textarea id="note-text" maxlength="500" rows="5" placeholder="Andika chochote hapa, hakuna anayekuhukumu..."></textarea><div class="form-footer"><span id="character-count">0 / 500</span><button class="submit-note dialog-submit" id="send-note" type="button">Submit anonymously</button></div><p class="form-feedback" id="form-feedback" aria-live="polite"></p></form></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
